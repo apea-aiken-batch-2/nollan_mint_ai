@@ -31,6 +31,15 @@ You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 ```bash
 npm install
 ```
+### Files Required for Running
+
+Create a .env.local file in the root of the project
+add your Flux point API Key in this format : 
+FAL_KEY=(INSERT-APIKEY-HERE)
+
+Go to offchain/components/Dashboard2.tsx
+  on Line 101 update the fee address to be your cardano wallets recieving address 
+
 
 ### Run the development server
 
