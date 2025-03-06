@@ -15,8 +15,13 @@ This is a template for creating applications using Next.js 14 (app directory) an
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## How to Use
+Must Use a Cardano Wallet on the Preview Network
 
 ### Install dependencies
+Must be in directory offchain
+
+run.
+cd offchain
 
 You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 
@@ -26,11 +31,11 @@ npm install
 ### Files Required for Running
 
 Create a .env.local file in the root of the project
-add your Flux point API Key in this format : 
-FAL_KEY=(INSERT-APIKEY-HERE)
+ - add your Flux point API Key in this format : 
+ - FAL_KEY=[INSERT-APIKEY-HERE]
 
 Go to offchain/components/Dashboard2.tsx
-  on Line 101 update the fee address to be your cardano wallets recieving address 
+ - on Line 101 update the fee address to be your cardano wallets recieving address 
 
 
 ### Run the development server
