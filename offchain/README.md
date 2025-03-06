@@ -30,7 +30,7 @@ npm install
 ```
 ### Files Required for Running
 
-Create a .env.local file in the root of the project
+Create a .env.local file in the offchain folder of the project
  - add your Flux point API Key in this format : 
  - FAL_KEY=[INSERT-APIKEY-HERE]
 
