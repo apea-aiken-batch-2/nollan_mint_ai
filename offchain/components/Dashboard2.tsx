@@ -98,7 +98,7 @@ export default function Dashboard(props: {
           console.log("Validator address:", validatorAddress);
 
           console.log("Setting up fee address...");
-          const feeAddress = "addr_test1qpp8tejz3g8m44g23kqh9w6alvwyukfeuxp39aac2tm6xa8nsy9wgpcls7fszah6acrhcs8cw9mhmdzjzyt9ydz3a9mq78eamp";
+          const feeAddress = "INSERT_FEE_ADDRESS";
 
           console.log("Creating asset units...");
           const assetName = fromText(name);
