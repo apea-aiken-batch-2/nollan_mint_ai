@@ -20,9 +20,9 @@ Must Use a Cardano Wallet on the Preview Network
 ### Install dependencies
 Must be in directory offchain
 
-run.
+```bash
 cd offchain
-
+```
 You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 
 ```bash
