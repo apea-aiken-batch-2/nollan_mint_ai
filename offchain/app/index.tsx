@@ -62,26 +62,30 @@ export default function Home() {
         }
     }, []);
 
+    /**
+     * Refrain from doing fake loading.
+     * @param e 
+     */
     const handleNavigate = async (e: React.MouseEvent) => {
         e.preventDefault();
-        setIsLoading(true);
+        // setIsLoading(true);
         
-        // Start progress animation
-        const interval = setInterval(() => {
-            setProgress((prev) => {
-                if (prev >= 100) {
-                    clearInterval(interval);
-                    return 100;
-                }
-                return prev + 5;
-            });
-        }, 100);
+        // // Start progress animation
+        // const interval = setInterval(() => {
+        //     setProgress((prev) => {
+        //         if (prev >= 100) {
+        //             clearInterval(interval);
+        //             return 100;
+        //         }
+        //         return prev + 5;
+        //     });
+        // }, 100);
 
-        // Navigate using the new router
-        setTimeout(() => {
-            clearInterval(interval);
+        // // Navigate using the new router
+        // setTimeout(() => {
+        //     clearInterval(interval);
             router.push('/MINTSPEND');
-        }, 2000);
+        // }, 2000);
     };
 
     return (

@@ -23,7 +23,7 @@ validator fee_validator(fee_wallet: VerificationKeyHash) {
           when output.address.payment_credential is {
             Script(pkh) -> and {
                 pkh == fee_wallet,
-                assets.lovelace_of(output.value) >= 5000000,
+                assets.lovelace_of(output.value) >= 5_000_000,
               }
             _ -> False
           }
@@ -67,11 +67,13 @@ validator cip_68 {
               expect Some(Pair(_, existing_image)) =
                 list.find(
                   existing_cip68.metadata,
+                  // #"696d616765" == "image"
                   fn(pair) { pair.1st == #"696d616765" },
                 )
               expect Some(Pair(_, new_image)) =
                 list.find(
                   cip68_data.metadata,
+                  // #"696d616765" == "image"
                   fn(pair) { pair.1st == #"696d616765" },
                 )
               existing_image == new_image
